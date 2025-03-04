@@ -1,82 +1,77 @@
-/* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #2c3e50, #4ca1af);
-    color: white;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
-}
-
-nav {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+    color: white;
+    scroll-behavior: smooth;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
+    padding: 0;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
+    padding: 10px 15px;
+    transition: background 0.3s, border-radius 0.3s;
 }
 
 nav ul li a:hover {
-    color: #4ca1af;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 
 .container {
-    margin-top: 80px;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2em;
+    margin-bottom: 15px;
 }
 
 video, img {
-    width: 80%;
-    max-width: 600px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
 }
 
 .button {
     display: inline-block;
-    background: #4ca1af;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
     margin-top: 20px;
-    transition: 0.3s;
+    padding: 12px 25px;
+    background: #ff8c00;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 .button:hover {
-    background: #2c3e50;
-}
-
-.hover-effect {
-    transition: transform 0.3s ease-in-out;
-}
-
-.hover-effect:hover {
-    transform: scale(1.05);
+    background: #ff4500;
+    transform: scale(1.1);
 }
